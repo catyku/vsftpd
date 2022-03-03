@@ -17,7 +17,6 @@ docker pull catyku/vsftpd
 ```
 docker run -d -v /my/data/directory:/home/vsftpd \
 -p 20:20 -p 21:21 -p 21100-21110:21100-21110 \
--e PASV_ADDRESS=127.0.0.1 \
 --name vsftpd --restart=always catyku/vsftpd
 ```
 
